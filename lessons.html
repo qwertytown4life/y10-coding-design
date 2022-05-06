@@ -1,0 +1,200 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <title>Coding Ninja</title>
+        <style>
+            p {
+                font-size: 15px;
+            }
+
+            .codeFont {
+                background: black;
+                color: white;
+                
+            }
+
+            .multiline {
+                white-space: pre-wrap;
+            }
+
+            table, th, td {
+                border:2px solid black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        
+        <nav class="nav-wrapper red">
+            <div class="container">
+                <a href="mainPg.html" class="brand-logo">Coding Ninja</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="mainPg.html">Home</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="index.html">Problems</a></li>
+                    
+                    <li><a href="extraPractice.html">Extra Practice</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="mainPg.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="index.html">Problems</a></li>
+            
+            <li><a href="extraPractice.html">Extra Practice</a></li>
+        </ul>
+
+        <div class="container">
+            <h3 class="center">Lessons</h3>
+            <h5 class="align-left" onclick="showLesson('functions')">Functions</h5>
+            <div class="functions">
+                <p>In programming, functions are self contained pieces of code that 'do things' when certain parameters are given to them. In python a function is defined as:
+                </p>
+
+                <p class="codeFont multiline">def function(x):</p>
+
+                <p>The above code is a defining a function named 'function' that passes a something for the parameter 'x'. Anything after that must be indented. The end of a function must end with a return statement.</p>
+                <p>An example of a function that takes in a number 'x' and doubles it would look like:</p>
+
+                <p class="codeFont multiline">def function(x):
+                    return x*2</p>
+
+            </div>
+            <br>
+            <h5 class="align-left" onclick="showLesson('ifStatements')">If-Statements</h5>
+            <div class="ifStatements">
+                <p>Programming is filled with decisions. If we want to make decisions about certain things based on information, we must you an if-statement. In python you can write them as:
+                </p>
+
+                <p class="codeFont multiline">if (condition):
+                    do something</p>
+
+                <p>You can also use else if (elif) or else (else) statments.For example, lets define 6 to be a special number. If we want to write an if statement that checks if a number is equal to 10 or not.</p>
+
+
+                <p class="codeFont multiline">if == 10:
+                    return 'number is equal to 10'
+else:
+                    return 'number is not equal to 10' </p>
+
+                <p>*Note that to check if two things are equal you must use '==' and not '=' as the latter is an assignment operator.</p>
+            </div>
+            <br>
+
+            <h5 class="align-left" onclick="showLesson('arithmetic')">Simple Arithmetic</h5>
+            <div class="arithmetic">
+                <p>Math is frequently used in programming. Below are the basic operators:
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Math Operation</th>
+                        <th>Python Symbol</th>
+                    </tr>
+                    <tr>
+                        <td>addition</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>subtraction</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>multiplication</td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>division</td>
+                        <td>/</td>
+                    </tr>
+                    <tr>
+                        <td>exponentiation</td>
+                        <td>**</td>
+                    </tr>
+                    <tr>
+                        <td>modulus (remainder in division)</td>
+                        <td>%</td>
+                    </tr>
+
+                </table>
+
+                <p>Note that python follows order of operations. For example:</p>
+                <p class="codeFont multiline">x = 4*3 + 2 - 9/3**2
+x = (12) + 2 - (9/9)
+x = 14 - (1)
+x = 13</p>
+            </div>
+
+            <br>
+                
+            <h5 class="align-left" onclick="showLesson('vars')">Variables and Arrays</h5>
+            <div class="vars">
+                <p>In python you can store information in variables and arrays. Below is declaring a variable named 'x' and setting it equal to 5.
+                </p>
+
+                <p class="codeFont multiline">x = 5</p>
+
+                <p>Notice that a single equals sign is used. Below is setting an array of values equal to [1, 4, 6]. An array is a contained 'list' of values held together. You can access them individually by typing arrayName[i], where arrayName is the name of the array and i is the index of the element you want to access. Note that arrays are 0-indexed. In other words, they start at 0 and count of until the lenght of the array minus 1.</p>
+
+                <p class="codeFont multiline">x = [1,4,6]</p>
+            </div>
+
+            <br>
+
+            <h5 class="align-left" onclick="showLesson('loops')">Loops</h5>
+            <div class="loops">
+                <p>In order to iterate through things, you must you loops. There are two loops in python. While loops and for loops. Below is an example of a while loop:
+                </p>
+        
+                <p class="codeFont multiline">while (condition is true):
+                    (do something)</p>
+        
+                <p>For loops are a little harder and look like:</p>
+        
+                <p class="codeFont multiline">for ([starting point], [ending point], [increment/decriment]):
+                    do something</p>
+            </div>
+
+
+            
+            
+        </div>
+
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        })
+
+        let classes = ['functions', 'ifStatements', 'loops', 'vars', 'arithmetic']
+        for (let i = 0; i < classes.length; ++i) {
+            document.getElementsByClassName(classes[i])[0].style.display = 'none';
+        }
+
+    </script>
+
+    <script src="lessonsJS.js"></script>
+
+
+</html>

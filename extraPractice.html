@@ -1,0 +1,110 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <title>Coding Ninja</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+        <nav class="nav-wrapper red">
+            <div class="container">
+                <a href="mainPg.html" class="brand-logo">Coding Ninja</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="mainPg.html">Home</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="index.html">Problems</a></li>
+                    
+                    <li><a href="extraPractice.html">Extra Practice</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="mainPg.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="index.html">Problems</a></li>
+            
+            <li><a href="extraPractice.html">Extra Practice</a></li>
+        </ul>
+    </body>
+
+    <div class="container">
+        
+        <h5 class="center">If you are interested in learning more python or about programming in general, here are some extra resources:</h5>
+        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="mosh.jpg" id="card1">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Comprehensive Python Tutorial</span>
+                        <p>This is a comprehensive step by step tutorial on how to set up python on your computer. It also contains basic implementation skills and more applicable skills like handling spreadsheets.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://youtu.be/_uQrJ0TkZlc" target="_">Click to see tutorial on youtube</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="codingBat.jpg" id="card1">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Coding Bat</span>
+                        <p>This is a more advanced version of this website that tests single implementation and problem solving skills in either python or java. It is a great place to test your programming skills as they develop.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://codingbat.com/python" target="_">Click to visit website</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="dmoj.jpg" id="card1">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Online Judge</span>
+                        <p>This is a website that tests higher level computer science skills. It has comprehensive problems and frequent contests to test your problem solving programming skills.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://dmoj.ca/" target="_">Click to visit website</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        })
+    </script>
+</html>

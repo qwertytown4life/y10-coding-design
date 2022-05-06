@@ -1,0 +1,271 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+
+        <title>PP test website</title>
+        <style>
+            
+
+            textarea {
+                height: 500px;
+            }
+
+            #problemDesc {
+                font-size: 15px
+            }
+
+            .bobSol {
+                display: none;
+            }
+
+            .codeFont {
+                background: black;
+                color: white;
+                
+            }
+
+            .multiline {
+                white-space: pre-wrap;
+            }
+
+            .arrSol {
+                display: none;
+            }
+
+            .evenSol {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav class="nav-wrapper red">
+            <div class="container">
+                <a href="mainPg.html" class="brand-logo">Coding Ninja</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="mainPg.html">Home</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="index.html">Problems</a></li>
+                    
+                    <li><a href="extraPractice.html">Extra Practice</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="mainPg.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="index.html">Problems</a></li>
+            
+            <li><a href="extraPractice.html">Extra Practice</a></li>
+        </ul>
+
+        <div class="container">
+            <h4 class="center">Below are some problems with full solutions for you to try: </h4>
+            <br>
+            <h5 class="left-align">Problem 1: Magic Machine </h5>
+            <p id="problemDesc">Description: Bob wants a function named 'bob(x)' that multiplies the given number by itself. </p>
+
+            
+            <textarea type="text" id="textbox" >def bob(x):</textarea>
+            <br>
+            <a id="BTN" class="btn blue" onclick="test([0, 4, -5], [0, 16, 25], 'textbox', 'bobTests', 'bob');">button to run code</a>
+
+            
+            
+            <table id="bobTests">
+                <tr>
+                    <th>
+                        Test case number
+                    </th>
+                    <th>
+                        Result
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+            <div class="bobSol">This problem is asking you to square a number.</div>
+            <div class="codeFont multiline bobSol">def bob(x): 
+                return x**2</div>
+            <a class="btn blue" onclick="showSolEvery('bobSol');">Solution</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h5 class="left-align">Problem 2: Number Attack</h5>
+            <p id="problemDesc">Description: Given a number, if that number is negative, subtract 10 from it, and if it is positive, add 1. Name the function 'arr(x)'.</p>
+
+            
+            <textarea type="text" id="textbox2" >def arr(x):</textarea>
+            <br>
+            <a class="btn blue" onclick="test([0, -5, 1], [0, -15, 2], 'textbox2', 'arrTests', 'arr');">button to run code</a>
+            
+        
+            <table id="arrTests">
+                <tr>
+                    <th>
+                        Test case number
+                    </th>
+                    <th>
+                        Result
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+            <div class="arrSol">Use careful if statments to solve. Also be carful of the number 0 as it is neither positive or negative.</div>
+            <div class="codeFont multiline arrSol">def arr(x):
+                if x > 0:
+                    x += 1
+                elif x < 0:
+                    x -= 10
+                return x</div>
+            <a class="btn blue" onclick="showSolEvery('arrSol');">Solution</a>
+
+            <br> 
+            <br>
+            <br>
+            <br>
+
+
+            <h5 class="left-align">Problem 3: Evens</h5>
+            <p id="problemDesc">Description: Given a number, find the next number strictly larger than it that is even. Name the function 'evens(x)'.</p>
+
+            
+            <textarea type="text" id="textbox3" >def evens(x):</textarea>
+            <br>
+            <a class="btn blue" onclick="test([-4, 0, 7], [-2, 2, 8], 'textbox3', 'evenTests', 'evens');"">button to run code</a>
+            
+        
+            <table id="evenTests">
+                <tr>
+                    <th>
+                        Test case number
+                    </th>
+                    <th>
+                        Result
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+            <div class="evenSol">Use the modulus operator to check if numbers are even or odd.</div>
+            <div class="codeFont multiline evenSol">def evens(x):
+                if x % 2 == 0:
+                    x += 2
+                else:
+                    x += 1
+                return x</div>
+            <a class="btn blue" onclick="showSolEvery('evenSol');">Solution</a>
+
+            
+        </div>
+
+
+        
+    </body>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="backend.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        })
+    </script>
+</html>
